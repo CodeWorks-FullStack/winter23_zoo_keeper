@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Zoo Keeper</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="bg-dark text-light p-3 text-center">ZOO KEEPER</h1>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 p-3" id="larry">
+          <marquee behavior="alternate" direction="up" scrollamount="40"
+            class="biz border border-2 rounded border-dark img-fluid">
+            <marquee behavior="alternate" direction="right" scrollamount="40">
+              <h2 onclick="feedAnimal('larry')">🦞</h2>
+            </marquee>
+          </marquee>
+          <h3 class="text-center">larry | 😋 | 100</h3>
+        </div>
+        <div class="col-4 p-3" id="harry">
+          <marquee behavior="alternate" direction="up" scrollamount="7"
+            class="biz border border-2 rounded border-dark img-fluid">
+            <marquee behavior="alternate" direction="right">
+              <h2 onclick="feedAnimal('harry')">🦛</h2>
+            </marquee>
+          </marquee>
+          <h3 class="text-center">harry | 😋 | 100</h3>
+        </div>
+        <div class="col-4 p-3" id="barry">
+          <marquee behavior="alternate" direction="up" scrollamount="12"
+            class="biz border border-2 rounded border-dark img-fluid">
+            <marquee behavior="alternate" direction="right">
+              <h2 onclick="feedAnimal('barry')">🦫</h2>
+            </marquee>
+          </marquee>
+          <h3 class="text-center">barry | 😋 | 100</h3>
+        </div>
+        <div class="col-4 p-3" id="sherry">
+          <marquee behavior="alternate" direction="up" scrollamount="12"
+            class="biz border border-2 rounded border-dark img-fluid">
+            <marquee behavior="alternate" direction="right">
+              <h2 onclick="feedAnimal('sherry')">🐑</h2>
+            </marquee>
+          </marquee>
+          <h3 class="text-center">barry | 😋 | 100</h3>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h4>
+            Paycheck: <span id="paycheck"></span>
+          </h4>
+          <h4>
+            Money: <span id="money"></span>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
